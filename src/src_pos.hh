@@ -17,7 +17,7 @@ namespace crisp
         std::size_t line;
     };
 
-#define CRISP_UTIL_SRC_POS \
+#define CRISP_SRC_POS      \
     crisp::src_pos         \
     {                      \
         __FILE__, __LINE__ \
