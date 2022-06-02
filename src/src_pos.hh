@@ -10,7 +10,7 @@
 #include <string>
 #include <string_view>
 
-namespace dugum
+namespace crisp
 {
     struct src_pos final {
         std::string file;
@@ -22,7 +22,7 @@ namespace dugum
     {                      \
         __FILE__, __LINE__ \
     }
-} // namespace dugum
+} // namespace crisp
 
 template<>
 struct fmt::formatter<crisp::src_pos> : fmt::formatter<std::string_view> {
