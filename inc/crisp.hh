@@ -6,8 +6,12 @@
 
 #include "src_pos.hh"
 #include "test/group.hh"
-#include "test/result.hh"
+#include "test/group_result.hh"
+#include "test/outcome.hh"
 #include "test/suite.hh"
+#include "test/suite_result.hh"
+#include "test/unit.hh"
+#include "test/unit_result.hh"
 #include "version.hh"
 
 #endif // CRISP_HH

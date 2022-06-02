@@ -4,10 +4,12 @@
 #ifndef CRISP_TEST_GROUP_HH
 #define CRISP_TEST_GROUP_HH
 
-#include "result.hh"
+#include "group_result.hh"
 #include "suite.hh"
+#include "unit.hh"
 
 #include <set>
+#include <string>
 #include <unordered_map>
 
 namespace crisp::test
