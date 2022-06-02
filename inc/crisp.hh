@@ -4,10 +4,10 @@
 #ifndef CRISP_HH
 #define CRISP_HH
 
-#include "group.hh"
-#include "result.hh"
 #include "src_pos.hh"
-#include "suite.hh"
+#include "test/group.hh"
+#include "test/result.hh"
+#include "test/suite.hh"
 #include "version.hh"
 
 #endif // CRISP_HH

@@ -1,13 +1,13 @@
 // SPDX-FileCopyrightText: (C) 2022 Cem Geçgel <gecgelcem@outlook.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CRISP_UTIL_VERSION_HH
-#define CRISP_UTIL_VERSION_HH
+#ifndef CRISP_VERSION_HH
+#define CRISP_VERSION_HH
 
 #include <fmt/format.h>
 #include <ostream>
 
-namespace dugum
+namespace crisp
 {
     struct version final {
         unsigned short major;
@@ -16,7 +16,7 @@ namespace dugum
     };
 
     auto constexpr VERSION = version{16, 1, 0};
-} // namespace dugum
+} // namespace crisp
 
 template<>
 struct fmt::formatter<crisp::version> {
@@ -44,4 +44,4 @@ struct fmt::formatter<crisp::version> {
     }
 };
 
-#endif // CRISP_UTIL_VERSION_HH
+#endif // CRISP_VERSION_HH
