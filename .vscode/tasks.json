@@ -9,7 +9,7 @@
 		{
 			"type": "shell",
 			"label": "build",
-			"command": "make",
+			"command": "ninja",
 			"group": {
 				"kind": "build",
 				"isDefault": true

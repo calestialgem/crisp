@@ -5,19 +5,22 @@ cmake_minimum_required(VERSION 3.0.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-project(sablon)
+project(crisp)
 
-function(calestialgem_set_warnings_includes target)
-    # Includes
-    target_include_directories(${target} PRIVATE ${PROJECT_SOURCE_DIR}/src)
-    # Warnings
-    if(MSVC)
-        target_compile_options(${target} PRIVATE /Wall)
-    else(MSVC)
-        target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic)
-    endif(MSVC)
-endfunction(calestialgem_set_warnings_includes target)
+# Library
+add_library(${PROJECT_NAME} STATIC src/lib.cc)
 
-# Executable
-add_executable(${PROJECT_NAME} src/main.cc)
-calestialgem_set_warnings_includes(${PROJECT_NAME})
+# Includes
+target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/src)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/inc)
+target_link_libraries(${PROJECT_NAME} PUBLIC fmt::fmt-header-only)
+
+# Warnings
+if(MSVC)
+    target_compile_options(${PROJECT_NAME} PRIVATE /Wall)
+else(MSVC)
+    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
+endif(MSVC)
+
+# {fmt}
+add_subdirectory(fmt EXCLUDE_FROM_ALL)
