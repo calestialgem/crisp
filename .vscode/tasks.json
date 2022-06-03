@@ -7,15 +7,12 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "shell",
+			"type": "cmake",
 			"label": "build",
-			"command": "ninja",
+			"command": "build",
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			},
-			"options": {
-				"cwd": "${workspaceFolder}/build"
 			},
 			"presentation": {
 				"echo": true,
