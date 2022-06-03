@@ -1,12 +1,12 @@
 // SPDX-FileCopyrightText: (C) 2022 Cem Geçgel <gecgelcem@outlook.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CRISP_TEST_GROUP_HH
-#define CRISP_TEST_GROUP_HH
+#ifndef CRISP_TEST_GROUP_CC
+#define CRISP_TEST_GROUP_CC
 
-#include "group_result.hh"
-#include "suite.hh"
-#include "unit.hh"
+#include "group_result.cc"
+#include "suite.cc"
+#include "unit.cc"
 
 #include <set>
 #include <string>
@@ -59,4 +59,4 @@ namespace crisp::test
     };
 } // namespace crisp::test
 
-#endif // CRISP_TEST_GROUP_HH
+#endif // CRISP_TEST_GROUP_CC

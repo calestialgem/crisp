@@ -1,11 +1,11 @@
 // SPDX-FileCopyrightText: (C) 2022 Cem Geçgel <gecgelcem@outlook.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CRISP_TEST_UNIT_RESULT_HH
-#define CRISP_TEST_UNIT_RESULT_HH
+#ifndef CRISP_TEST_UNIT_RESULT_CC
+#define CRISP_TEST_UNIT_RESULT_CC
 
-#include "outcome.hh"
-#include "src_pos.hh"
+#include "outcome.cc"
+#include "src_pos.cc"
 
 #include <fmt/format.h>
 
@@ -44,4 +44,4 @@ struct fmt::formatter<crisp::test::unit_result> {
     }
 };
 
-#endif // CRISP_TEST_UNIT_RESULT_HH
+#endif // CRISP_TEST_UNIT_RESULT_CC

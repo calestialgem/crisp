@@ -1,11 +1,11 @@
 // SPDX-FileCopyrightText: (C) 2022 Cem Geçgel <gecgelcem@outlook.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CRISP_TEST_UNIT_HH
-#define CRISP_TEST_UNIT_HH
+#ifndef CRISP_TEST_UNIT_CC
+#define CRISP_TEST_UNIT_CC
 
-#include "src_pos.hh"
-#include "unit_result.hh"
+#include "src_pos.cc"
+#include "unit_result.cc"
 
 #include <functional>
 
@@ -24,4 +24,4 @@ namespace crisp::test
     };
 } // namespace crisp::test
 
-#endif // CRISP_TEST_UNIT_HH
+#endif // CRISP_TEST_UNIT_CC

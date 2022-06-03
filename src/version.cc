@@ -1,8 +1,8 @@
 // SPDX-FileCopyrightText: (C) 2022 Cem Geçgel <gecgelcem@outlook.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-#ifndef CRISP_VERSION_HH
-#define CRISP_VERSION_HH
+#ifndef CRISP_VERSION_CC
+#define CRISP_VERSION_CC
 
 #include <fmt/format.h>
 #include <ostream>
@@ -15,7 +15,7 @@ namespace crisp
         unsigned short patch;
     };
 
-    auto constexpr VERSION = version{16, 1, 0};
+    auto constexpr VERSION = version{0, 1, 0};
 } // namespace crisp
 
 template<>
@@ -44,4 +44,4 @@ struct fmt::formatter<crisp::version> {
     }
 };
 
-#endif // CRISP_VERSION_HH
+#endif // CRISP_VERSION_CC
